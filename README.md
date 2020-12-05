@@ -1,3 +1,3 @@
 # Figure_code
 
-Simple code for some figures from GSA paper. CDF plots, sinuosity plots, and two-sample KS tests.
+Simple code for some figures from GSA paper. CDF plots, two-sample KS test, plots and sinuosity-curvature plots.
