@@ -1,3 +1,3 @@
 # Figure_code
 
-Simple code for some of the figures, CDF plots, and two-sample KS tests in PhD thesis.
+Simple code for some figures from GSA paper. CDF plots, two-sample KS test, plots and sinuosity-curvature plots.
