@@ -27,20 +27,20 @@ axes2 = fig.add_subplot(3, 1, 2)
 axes3 = fig.add_subplot(3, 1, 3)
 # width plot
 axes1.set_ylabel('Width, W (m)')
-axes1.plot(dist, elem_width, linestyle='solid',color='b', marker='s', markersize=4, linewidth=1) # square marker for channel elements
+axes1.plot(dist, elem_width, linestyle='solid',color='tab:blue', marker='s', markersize=4, linewidth=1) # square marker for channel elements
 axes1.plot(dist, c_width, linestyle='solid', color='k', marker='o', markersize=4, linewidth=1) # circle marker for complex scale
-axes1.plot(dist, sea_width, linestyle='solid', color='r', marker='D', markersize=4, linewidth=1) # diamond marker for seafloor channels
+axes1.plot(dist, sea_width, linestyle='solid', color='tab:red', marker='D', markersize=4, linewidth=1) # diamond marker for seafloor channels
 # depth plot 
 axes2.set_ylabel('Thickness or Depth, D (m)')
-axes2.plot(dist, elem_height,linestyle='solid',color='b', marker='s', markersize=4, linewidth=1) # square marker for channel elements
+axes2.plot(dist, elem_height,linestyle='solid',color='tab:blue', marker='s', markersize=4, linewidth=1) # square marker for channel elements
 axes2.plot(dist, c_height, linestyle='solid', color='k', marker='o', markersize=4, linewidth=1) # circle marker for complex scale
-axes2.plot(dist, sea_height, linestyle='solid', color='r', marker='D', markersize=4, linewidth=1) # diamond marker for seafloor channels
+axes2.plot(dist, sea_height, linestyle='solid', color='tab:red', marker='D', markersize=4, linewidth=1) # diamond marker for seafloor channels
 # aspect plot
 axes3.set_ylabel('Aspect Ratio (W/D)')
 axes3.set_xlabel('Downstream Distance (km)')
-axes3.plot(dist, elem_asp,linestyle='solid',color='b', marker='s', markersize=4, linewidth=1) # square marker for channel elements
+axes3.plot(dist, elem_asp,linestyle='solid',color='tab:blue', marker='s', markersize=4, linewidth=1) # square marker for channel elements
 axes3.plot(dist, c_asp, linestyle='solid', color='k', marker='o', markersize=4, linewidth=1) # circle marker for complex scale
-axes3.plot(dist, sea_asp, linestyle='solid', color='r', marker='D', markersize=4, linewidth=1) # diamond marker for seafloor channels
+axes3.plot(dist, sea_asp, linestyle='solid', color='tab:red', marker='D', markersize=4, linewidth=1) # diamond marker for seafloor channels
 
 fig.tight_layout()
 plt.savefig("Width_Depth_AspectRatio.pdf", format='pdf')

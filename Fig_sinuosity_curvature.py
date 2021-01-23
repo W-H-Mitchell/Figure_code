@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from statsmodels.formula.api import ols
 
 # Get the data
 ChSev = pd.read_csv('Niger_ChSev.csv')
@@ -85,8 +86,11 @@ def scatter_SinCurv(df):
     axes2.plot(unstructured_curvature, m*unstructured_curvature + b, c='r', linewidth=0.5)
     plt.show()
 
+"""
+GET PARAMETERS FOR TWO MODELS
+"""
 
-# Call figures
+# Call figure functions
 downstream_sin_curv(ChSev)
 downstream_sin_curv(ChOne)
 scatter_SinCurv(compiled)
