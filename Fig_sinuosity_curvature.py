@@ -38,9 +38,9 @@ def downstream_sin_curv(data):
     ax2 = ax1.twinx()  # instantiate a second axes that shares the same x-axis
 
     # curvature plot
-    ax2.set_ylabel('Curvature', color= 'b')  # we already handled the x-label with ax1
-    ax2.plot(dist, curv, linestyle='solid', color='b', marker='d', markersize=4, linewidth=1)
-    ax2.tick_params(axis='y', labelcolor= 'b')
+    ax2.set_ylabel('Curvature', color= 'tab:blue')  # we already handled the x-label with ax1
+    ax2.plot(dist, curv, linestyle='solid', color='tab:blue', marker='d', markersize=4, linewidth=1)
+    ax2.tick_params(axis='y', labelcolor= 'tab:blue')
 
     fig1.tight_layout()  # otherwise the right y-label is slightly clipped
     fig1.savefig("Downstream_SinCurvature.pdf", format='pdf')
@@ -113,6 +113,8 @@ def scatter_SinCurv(df):
     axes2.annotate(mserr, (2,10))
     axes2.annotate(r2_1, (4,10))
     plt.show()
+
+
 
 # Call figure functions
 downstream_sin_curv(ChSev)
