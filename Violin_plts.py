@@ -15,6 +15,7 @@ sns.set_context('talk') # paper or talk
 data_chc1 = pd.read_excel('Compiled_dimensions.xlsx', sheet_name=0)
 data_chc7 = pd.read_excel('Compiled_dimensions.xlsx', sheet_name=1)
 JobeData = pd.read_csv('JobeData.csv')
+data_chc1['Width_m'].mean()
 
 columns = ['Width_m', 'Height_m', 'Aspect_Ratio']
 # For channel 1
